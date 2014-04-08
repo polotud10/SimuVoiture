@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 
 public class DessinVoiture extends JFrame {
 
+	
 	public static final int TailleFenetreEnPixels = 500;
 	
 	private int xPixelVoiture;
