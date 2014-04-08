@@ -22,15 +22,26 @@ public class TestVoiture {
 	}
 	
 	@Test
+	public void testGetY(){
+		Voiture voiture = new Voiture(20,10,150) ;
+		
+		int yVoiture = voiture.getCoordYEnMetres() ;
+		
+		assertEquals(10, yVoiture);
+	}
+	
+	@Test
 	public void testVitesseX() {
-		Voiture voiture = new Voiture(20,150);
+		Voiture voiture = new Voiture(20,10,150);
 		
 		assertEquals(150,voiture.getVitesseMetreParSecondes());
 	}
 	
+
+	
 	@Test
 	public void testMiseAjourPositionEnFonctionVitesse() {
-		Voiture voiture = new Voiture(20,100);
+		Voiture voiture = new Voiture(20,10,100);
 		voiture.avancerEnFonctionDeLaVitesse();
 		assertEquals(120, voiture.getCoordXEnMetres());
 	}

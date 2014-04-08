@@ -14,7 +14,7 @@ public class Voiture extends Observable {
 		this.vitesseMetreParSecondes = 0;
 	}
 
-	public Voiture(int coordXEnMetres, int vitesseMetreParSecondes) {
+	public Voiture(int coordXEnMetres, int i, int vitesseMetreParSecondes) {
 		this.coordXEnMetres = coordXEnMetres;
 		this.vitesseMetreParSecondes = vitesseMetreParSecondes;
 	}
@@ -35,5 +35,10 @@ public class Voiture extends Observable {
 	private void notificationObservateurs() {
 		this.setChanged();
 		this.notifyObservers();
+	}
+
+	public int getCoordYEnMetres() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
