@@ -44,5 +44,4 @@ public class TestVoiture {
 		assertEquals(120, voiture.getCoordXEnMetres());
 	}
 
-	
 }
