@@ -36,7 +36,6 @@ public class TestVoiture {
 		
 		assertEquals(150,voiture.getVitesseMetreParSecondes());
 	}
-
 	
 	@Test
 	public void testMiseAjourPositionEnFonctionVitesse() {
