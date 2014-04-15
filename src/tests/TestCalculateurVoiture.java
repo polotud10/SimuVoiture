@@ -13,7 +13,7 @@ public class TestCalculateurVoiture {
 	@Test
 	public void testCreeTriangle(){
 		
-		Polygon affichageDeLaVoiture = CalculateurVoiture.creeTriangle(100,200);
+		Polygon affichageDeLaVoiture = CalculateurVoiture.creeTriangle(100,200,50);
 		
 		int pointDuTriangleEnX[] = affichageDeLaVoiture.xpoints;
 		int pointDuTriangleEnY[] = affichageDeLaVoiture.ypoints;

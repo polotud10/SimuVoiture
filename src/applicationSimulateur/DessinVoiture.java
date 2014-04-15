@@ -31,21 +31,7 @@ public class DessinVoiture extends JFrame {
 
 	public void dessinerVoiture(int xPixelVoiture, int yPixelVoiture, Graphics graphics) {
 	
-		int pointDuTriangleEnX[] = {0,0,0} ;
-		int pointDuTriangleEnY[] = {0,0,0} ;
-		int nombreDePoints = 3;
-		
-		int tailleVoiture = 50;
-		
-		pointDuTriangleEnX[0]=xPixelVoiture; 
-		pointDuTriangleEnX[1]=xPixelVoiture; 
-		pointDuTriangleEnX[2]=xPixelVoiture+tailleVoiture;
-		
-		pointDuTriangleEnY[0]=yPixelVoiture-tailleVoiture/2;
-		pointDuTriangleEnY[1]=yPixelVoiture+tailleVoiture/2; 
-		pointDuTriangleEnY[2]=yPixelVoiture;
-
-		Polygon affichageDeLaVoiture = new Polygon(pointDuTriangleEnX, pointDuTriangleEnY, nombreDePoints);  
+		Polygon affichageDeLaVoiture = CalculateurVoiture.creeTriangle(xPixelVoiture,yPixelVoiture,50);
 	
 		graphics.fillPolygon(affichageDeLaVoiture);
 		
