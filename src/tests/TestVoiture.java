@@ -49,6 +49,6 @@ public class TestVoiture {
 	public void testAngleVoiture() {
 		Voiture voiture = new Voiture(0,0,100);
 		voiture.setAngle(20);
-		assertEquals(20, voiture.getAngle());
+		assertTrue(20 == voiture.getAngle());
 	}
 }

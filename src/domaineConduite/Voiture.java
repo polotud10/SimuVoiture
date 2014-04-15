@@ -7,6 +7,7 @@ public class Voiture extends Observable {
 	private int coordXEnMetres;
 	private int coordYEnMetres;
 	private int vitesseMetreParSecondes;
+	private double angle;
 
 	public static final int largeurDomaine = 1000;
 
@@ -44,13 +45,11 @@ public class Voiture extends Observable {
 		this.notifyObservers();
 	}
 
-	public void setAngle(int i) {
-		// TODO Auto-generated method stub
-		
+	public void setAngle(double angle) {
+		this.angle = angle;
 	}
 
-	public Object getAngle() {
-		// TODO Auto-generated method stub
-		return null;
+	public double getAngle() {
+		return angle;
 	}
 }
