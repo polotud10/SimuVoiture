@@ -105,7 +105,7 @@ public class TestVoiture {
 	@Test
 	public void testGetNezYDeLaVoiture() {
 		Voiture voiture = new Voiture(50,50,100);
-		voiture.setAngle(0);
+		voiture.setAngle(90);
 		
 		assertTrue(75 == voiture.getPositionYDuNez());
 	}
