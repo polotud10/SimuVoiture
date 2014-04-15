@@ -42,6 +42,7 @@ public class TestVoiture {
 		Voiture voiture = new Voiture(20,10,100);
 		voiture.avancerEnFonctionDeLaVitesse();
 		assertEquals(120, voiture.getCoordXEnMetres());
+		assertEquals(110, voiture.getCoordYEnMetres());
 	}
 
 }

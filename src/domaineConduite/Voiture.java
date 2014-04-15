@@ -35,6 +35,7 @@ public class Voiture extends Observable {
 
 	public void avancerEnFonctionDeLaVitesse() {
 		coordXEnMetres += vitesseMetreParSecondes;
+		coordYEnMetres += vitesseMetreParSecondes;
 		notificationObservateurs();
 	}
 
