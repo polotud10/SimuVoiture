@@ -10,6 +10,7 @@ public class Voiture extends Observable {
 	private double angle;
 
 	public static final int largeurDomaine = 1000;
+	public static final int coeffVitesse = 5;
 
 	public Voiture(int coordXEnMetres) {
 		this.coordXEnMetres = coordXEnMetres;
@@ -56,6 +57,6 @@ public class Voiture extends Observable {
 
 	public void accelerer() {
 		// TODO Auto-generated method stub
-		
+		vitesseMetreParSecondes += coeffVitesse;
 	}
 }
