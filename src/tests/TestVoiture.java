@@ -75,4 +75,12 @@ public class TestVoiture {
 
 		assertTrue(5 == voiture.getAngle());
 	}
+	
+	@Test
+	public void testTournerGaucheVoiture() {
+		Voiture voiture = new Voiture(0,0,100);
+		voiture.tournerGauche();
+
+		assertTrue(-5 == voiture.getAngle());
+	}
 }
