@@ -95,7 +95,12 @@ public class Voiture extends Observable {
 	}
 
 	public int getPositionXDuNez() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		double radians = Math.toRadians(angle);
+        
+		double nezPostionRelativeX = Math.cos(radians) * (getTaille() / 2);
+		int nezPostionGlobalX = coordXEnMetres + (int)nezPostionRelativeX;
+		
+		return nezPostionGlobalX;
 	}
 }

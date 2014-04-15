@@ -95,10 +95,10 @@ public class TestVoiture {
 	
 	@Test
 	public void testGetNezXDeLaVoiture() {
-		Voiture voiture = new Voiture(0,0,100);
-		voiture.setAngle(90);
+		Voiture voiture = new Voiture(50,50,100);
+		voiture.setAngle(0);
 		
-		assertTrue(70 == voiture.getPositionXDuNez());
+		assertTrue(75 == voiture.getPositionXDuNez());
 	}
 	
 }
