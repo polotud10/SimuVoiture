@@ -56,12 +56,12 @@ public class Voiture extends Observable {
 	}
 
 	public void accelerer() {
-		// TODO Auto-generated method stub
 		vitesseMetreParSecondes += coeffVitesse;
 	}
 
 	public void decelerer() {
-		// TODO Auto-generated method stub
-		
+		if (vitesseMetreParSecondes > 0) {
+			vitesseMetreParSecondes -= coeffVitesse;
+		}
 	}
 }
