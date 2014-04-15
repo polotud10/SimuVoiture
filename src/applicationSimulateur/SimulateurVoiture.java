@@ -12,12 +12,12 @@ import domaineConduite.Voiture;
 
 public class SimulateurVoiture {
 
-	public static final int dureeUneSecondeEnMilliSecondes = 1000;
+	public static final int dureeUneSecondeEnMilliSecondes = 200;
 
 	public static void main(String[] args) {
 		
 		DessinVoiture dessinVoiture = new DessinVoiture();
-		final Voiture voiture = new Voiture(100,10,50);
+		final Voiture voiture = new Voiture(100,10,10);
 		final VueVoiture triangle = new VueVoiture(voiture, dessinVoiture);
 		
 		Timer timerAvancer = new Timer(dureeUneSecondeEnMilliSecondes, new ActionListener() {
@@ -51,7 +51,7 @@ public class SimulateurVoiture {
 				
 				if (e.getKeyCode() == KeyEvent.VK_UP) {
 					System.out.println("fleche du haut");
-					
+					voiture.accelerer();
 				}
 				
 				if (e.getKeyCode() == KeyEvent.VK_DOWN) {
