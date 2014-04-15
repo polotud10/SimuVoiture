@@ -19,6 +19,7 @@ public class SimulateurVoiture {
 		DessinVoiture dessinVoiture = new DessinVoiture();
 		final Voiture voiture = new Voiture(100,10,10);
 		voiture.setAngle(80);
+		voiture.setTaille(30);
 		final VueVoiture triangle = new VueVoiture(voiture, dessinVoiture);
 		
 		Timer timerAvancer = new Timer(dureeUneSecondeEnMilliSecondes, new ActionListener() {

@@ -87,6 +87,7 @@ public class Voiture extends Observable {
 
 	public void setTaille(int taille) {
 		tailleTriangle = taille;
+		notificationObservateurs();
 	}
 
 	public int getTaille() {

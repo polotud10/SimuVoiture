@@ -27,6 +27,7 @@ public class VueVoiture implements Observer {
 		this.voiture = voiture;
 		this.voiture.addObserver(this);
 		this.ihm = ihm;
+		this.ihm.setTailleTriangle(voiture.getTaille());
 	}
 
 	public int transformerMetrePixel(int coordonneeXEnMetre) {
