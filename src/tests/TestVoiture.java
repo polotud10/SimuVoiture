@@ -88,8 +88,8 @@ public class TestVoiture {
 	@Test
 	public void testTailleVoiture() {
 		Voiture voiture = new Voiture(0,0,100);
-		voiture.setTaille(50);
+		voiture.setTaille(70);
 		
-		assertTrue(50 == voiture.getTaille());
+		assertTrue(70 == voiture.getTaille());
 	}
 }

@@ -8,6 +8,7 @@ public class Voiture extends Observable {
 	private int coordYEnMetres;
 	private int vitesseMetreParSecondes;
 	private double angle;
+	private int tailleTriangle;
 
 	public static final int largeurDomaine = 1000;
 	public static final int coeffVitesse = 1;
@@ -17,6 +18,7 @@ public class Voiture extends Observable {
 		this.coordXEnMetres = coordXEnMetres;
 		this.vitesseMetreParSecondes = 0;
 		this.angle = 0;
+		this.tailleTriangle = 50;
 	}
 
 	public Voiture(int coordXEnMetres, int coordYEnMetres, int vitesseMetreParSecondes) {
@@ -24,6 +26,7 @@ public class Voiture extends Observable {
 		this.coordYEnMetres = coordYEnMetres;
 		this.vitesseMetreParSecondes = vitesseMetreParSecondes;
 		this.angle = 0;
+		this.tailleTriangle = 50;
 	}
 
 	public int getCoordXEnMetres() {
@@ -82,13 +85,11 @@ public class Voiture extends Observable {
 		angle -= coeffRotation;
 	}
 
-	public void setTaille(int i) {
-		// TODO Auto-generated method stub
-		
+	public void setTaille(int taille) {
+		tailleTriangle = taille;
 	}
 
 	public int getTaille() {
-		// TODO Auto-generated method stub
-		return 0;
+		return tailleTriangle;
 	}
 }
