@@ -48,7 +48,6 @@ public class VueVoiture implements Observer {
 		ihm.setXPixelVoiture(xPixelVoiture);
 		ihm.setYPixelVoiture(yPixelVoiture);
 		ihm.repaint();
-
 	}
 
 }
