@@ -81,4 +81,14 @@ public class Voiture extends Observable {
 	public void tournerGauche() {
 		angle -= coeffRotation;
 	}
+
+	public void setTaille(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public int getTaille() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
