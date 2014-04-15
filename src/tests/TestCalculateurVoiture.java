@@ -25,6 +25,7 @@ public class TestCalculateurVoiture {
 		assertEquals(175, pointDuTriangleEnY[0]);
 		assertEquals(225, pointDuTriangleEnY[1]);
 		assertEquals(200, pointDuTriangleEnY[2]);
+		
 	}
 	
 }
