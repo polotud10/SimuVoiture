@@ -1,6 +1,7 @@
 package applicationSimulateur;
 
 import java.awt.Graphics;
+import java.awt.Polygon;
 
 import javax.swing.JFrame;
 
@@ -29,8 +30,20 @@ public class DessinVoiture extends JFrame {
 	}
 
 	public void dessinerVoiture(int xPixelVoiture, int yPixelVoiture, Graphics graphics) {
-		graphics.fillRect(xPixelVoiture, yPixelVoiture, 40, 20);
+	
+		int x[] = {0,0,0} ;
+		int y[] = {0,0,0} ;
+		int n = 3;
+		
+		int tailleVoiture = 50;
+		
+		x[0]=xPixelVoiture; x[1]=xPixelVoiture; x[2]=xPixelVoiture+tailleVoiture;
+		y[0]=yPixelVoiture-tailleVoiture/2; y[1]=yPixelVoiture+tailleVoiture/2; y[2]=yPixelVoiture;
 
+		Polygon affichageDeLaVoiture = new Polygon(x, y, n);  
+		
+		graphics.fillPolygon(affichageDeLaVoiture);
+		
 	}
 
 	public void setXPixelVoiture(int xPixelVoiture) {
