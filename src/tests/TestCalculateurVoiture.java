@@ -19,9 +19,9 @@ public class TestCalculateurVoiture {
 		int pointDuTriangleEnX[] = affichageDeLaVoiture.xpoints;
 		int pointDuTriangleEnY[] = affichageDeLaVoiture.ypoints;
 		
-		assertEquals(100, pointDuTriangleEnX[0]);
-		assertEquals(100, pointDuTriangleEnX[1]);
-		assertEquals(150, pointDuTriangleEnX[2]);
+		assertEquals(75, pointDuTriangleEnX[0]);
+		assertEquals(75, pointDuTriangleEnX[1]);
+		assertEquals(125, pointDuTriangleEnX[2]);
 		
 		assertEquals(175, pointDuTriangleEnY[0]);
 		assertEquals(225, pointDuTriangleEnY[1]);
@@ -45,5 +45,24 @@ public class TestCalculateurVoiture {
 
 		
 	}
+	
+	
+	@Test
+	public void testCreeTriangleEnFontionAngle(){
+		Polygon affichageDeLaVoiture = CalculateurVoiture.creeTriangleEnFonctionAngle(100,200,50,40);
+	
+		int pointDuTriangleEnX[] = affichageDeLaVoiture.xpoints;
+		int pointDuTriangleEnY[] = affichageDeLaVoiture.ypoints;
+		
+		
+		assertEquals(97, pointDuTriangleEnX[0]);
+		assertEquals(65, pointDuTriangleEnX[1]);
+		assertEquals(119, pointDuTriangleEnX[2]);
+		
+		assertEquals(165, pointDuTriangleEnY[0]);
+		assertEquals(203, pointDuTriangleEnY[1]);
+		assertEquals(216, pointDuTriangleEnY[2]);
+	}
+	
 	
 }

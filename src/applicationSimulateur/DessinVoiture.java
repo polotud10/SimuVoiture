@@ -31,7 +31,7 @@ public class DessinVoiture extends JFrame {
 
 	public void dessinerVoiture(int xPixelVoiture, int yPixelVoiture, Graphics graphics) {
 	
-		Polygon affichageDeLaVoiture = CalculateurVoiture.creeTriangle(xPixelVoiture,yPixelVoiture,50);
+		Polygon affichageDeLaVoiture = CalculateurVoiture.creeTriangleEnFonctionAngle(xPixelVoiture,yPixelVoiture,50,120);
 	
 		graphics.fillPolygon(affichageDeLaVoiture);
 		
