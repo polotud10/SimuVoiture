@@ -30,14 +30,15 @@ public class TestCalculateurVoiture {
 	}
 	
 	@Test
-	public void testRotationPoint(){
+	public void testRotationPointEnFonctionCentre(){
 		
 		Point pointA,pointCentrale,pointB ;
+		
 		pointA = new Point(15,15);
 		pointCentrale = new Point(10,10);
 		double angle = 40;
 		
-		pointB = CalculateurVoiture.rotationPoint(pointA,pointCentrale,angle);
+		pointB = CalculateurVoiture.rotationPointEnFonctionCentre(pointA,pointCentrale,angle);
 	
 		assertEquals(10, pointB.x);
 		assertEquals(17, pointB.y);

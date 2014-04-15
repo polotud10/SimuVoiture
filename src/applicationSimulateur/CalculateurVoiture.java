@@ -25,17 +25,17 @@ public class CalculateurVoiture {
 		return affichageDeLaVoiture;
 	}
 
-	public static Point rotationPoint(Point pointA, Point pointCentrale,double angle) {
+	public static Point rotationPointEnFonctionCentre(Point pointA, Point pointCentrale,double angle) {
 		
 		double angleRad = (angle/180)*Math.PI;
 	    double cosAngle = Math.cos(angleRad );
 	    double sinAngle = Math.sin(angleRad );
-	    double dx = (pointA.x-pointCentrale.x);
-	    double dy = (pointA.y-pointCentrale.y);
+	    double deltaX = (pointA.x-pointCentrale.x);
+	    double deltaY = (pointA.y-pointCentrale.y);
 	
 	    Point pointResultant = new Point();
-	    pointResultant.x = pointCentrale.x + (int) (dx*cosAngle-dy*sinAngle);
-	    pointResultant.y = pointCentrale.y + (int) (dx*sinAngle+dy*cosAngle);
+	    pointResultant.x = pointCentrale.x + (int) (deltaX*cosAngle-deltaY*sinAngle);
+	    pointResultant.y = pointCentrale.y + (int) (deltaX*sinAngle+deltaY*cosAngle);
 	    
 	    return pointResultant;
 	}
