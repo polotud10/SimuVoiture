@@ -64,4 +64,9 @@ public class Voiture extends Observable {
 			vitesseMetreParSecondes -= coeffVitesse;
 		}
 	}
+
+	public void tournerDroite() {
+		// TODO Auto-generated method stub
+		
+	}
 }
