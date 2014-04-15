@@ -1,5 +1,6 @@
 package applicationSimulateur;
 
+import java.awt.Point;
 import java.awt.Polygon;
 
 public class CalculateurVoiture {
@@ -23,6 +24,23 @@ public class CalculateurVoiture {
 		
 		return affichageDeLaVoiture;
 	}
+
+	public static Point rotationPoint(Point pointA, Point pointCentrale,double angle) {
+		
+		double angleRad = (angle/180)*Math.PI;
+	    double cosAngle = Math.cos(angleRad );
+	    double sinAngle = Math.sin(angleRad );
+	    double dx = (pointA.x-pointCentrale.x);
+	    double dy = (pointA.y-pointCentrale.y);
+	
+	    Point pointResultant = new Point();
+	    pointResultant.x = pointCentrale.x + (int) (dx*cosAngle-dy*sinAngle);
+	    pointResultant.y = pointCentrale.y + (int) (dx*sinAngle+dy*cosAngle);
+	    
+	    return pointResultant;
+	}
+
+	
 
 	
 }

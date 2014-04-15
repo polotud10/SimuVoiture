@@ -2,6 +2,7 @@ package tests;
 
 import static org.junit.Assert.*;
 
+import java.awt.Point;
 import java.awt.Polygon;
 
 import org.junit.Test;
@@ -25,6 +26,22 @@ public class TestCalculateurVoiture {
 		assertEquals(175, pointDuTriangleEnY[0]);
 		assertEquals(225, pointDuTriangleEnY[1]);
 		assertEquals(200, pointDuTriangleEnY[2]);
+		
+	}
+	
+	@Test
+	public void testRotationPoint(){
+		
+		Point pointA,pointCentrale,pointB ;
+		pointA = new Point(15,15);
+		pointCentrale = new Point(10,10);
+		double angle = 40;
+		
+		pointB = CalculateurVoiture.rotationPoint(pointA,pointCentrale,angle);
+	
+		assertEquals(10, pointB.x);
+		assertEquals(17, pointB.y);
+
 		
 	}
 	
