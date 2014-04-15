@@ -45,8 +45,10 @@ public class VueVoiture implements Observer {
 		int xPixelVoiture = this.transformerMetrePixel(xVoiture);
 		int yVoiture = this.voiture.getCoordYEnMetres();
 		int yPixelVoiture = this.transformerMetrePixel(yVoiture);
+		double angle = this.voiture.getAngle();
 		ihm.setXPixelVoiture(xPixelVoiture);
 		ihm.setYPixelVoiture(yPixelVoiture);
+		ihm.setAngleVoiture(angle);
 		ihm.repaint();
 	}
 

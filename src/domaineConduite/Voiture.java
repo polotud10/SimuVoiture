@@ -47,6 +47,7 @@ public class Voiture extends Observable {
 
 	public void setAngle(double angle) {
 		this.angle = angle;
+		notificationObservateurs();
 	}
 
 	public double getAngle() {

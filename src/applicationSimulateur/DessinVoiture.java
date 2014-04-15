@@ -12,6 +12,7 @@ public class DessinVoiture extends JFrame {
 	
 	private int xPixelVoiture;
 	private int yPixelVoiture;
+	private double angle;
 
 	public DessinVoiture() {
 		super();
@@ -20,18 +21,19 @@ public class DessinVoiture extends JFrame {
 		this.setVisible(true);
 		this.xPixelVoiture = 0;
 		this.yPixelVoiture = 0;
+		this.angle = 0;
 	}
 
 	@Override
 	public void paint(Graphics graphics) {
 		super.paint(graphics);
-		dessinerVoiture(this.xPixelVoiture, this.yPixelVoiture, graphics);
+		dessinerVoiture(this.xPixelVoiture, this.yPixelVoiture, this.angle, graphics);
 
 	}
 
-	public void dessinerVoiture(int xPixelVoiture, int yPixelVoiture, Graphics graphics) {
+	public void dessinerVoiture(int xPixelVoiture, int yPixelVoiture, double angle, Graphics graphics) {
 	
-		Polygon affichageDeLaVoiture = CalculateurVoiture.creeTriangleEnFonctionAngle(xPixelVoiture,yPixelVoiture,50,120);
+		Polygon affichageDeLaVoiture = CalculateurVoiture.creeTriangleEnFonctionAngle(xPixelVoiture,yPixelVoiture,50,angle);
 	
 		graphics.fillPolygon(affichageDeLaVoiture);
 		
@@ -45,4 +47,7 @@ public class DessinVoiture extends JFrame {
 		this.yPixelVoiture = yPixelVoiture;
 	}
 
+	public void setAngleVoiture(double angle) {
+		this.angle = angle;
+	}
 }

@@ -51,6 +51,7 @@ public class SimulateurVoiture {
 				
 				if (e.getKeyCode() == KeyEvent.VK_UP) {
 					System.out.println("fleche du haut");
+					
 				}
 				
 				if (e.getKeyCode() == KeyEvent.VK_DOWN) {
