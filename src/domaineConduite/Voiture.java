@@ -43,4 +43,14 @@ public class Voiture extends Observable {
 		this.setChanged();
 		this.notifyObservers();
 	}
+
+	public void setAngle(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Object getAngle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
