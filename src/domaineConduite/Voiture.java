@@ -103,4 +103,9 @@ public class Voiture extends Observable {
 		
 		return nezPostionGlobalX;
 	}
+
+	public int getPositionYDuNez() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
