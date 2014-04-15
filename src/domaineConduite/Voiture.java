@@ -11,16 +11,19 @@ public class Voiture extends Observable {
 
 	public static final int largeurDomaine = 1000;
 	public static final int coeffVitesse = 1;
+	public static final double coeffRotation = 5;
 
 	public Voiture(int coordXEnMetres) {
 		this.coordXEnMetres = coordXEnMetres;
 		this.vitesseMetreParSecondes = 0;
+		this.angle = 0;
 	}
 
 	public Voiture(int coordXEnMetres, int coordYEnMetres, int vitesseMetreParSecondes) {
 		this.coordXEnMetres = coordXEnMetres;
 		this.coordYEnMetres = coordYEnMetres;
 		this.vitesseMetreParSecondes = vitesseMetreParSecondes;
+		this.angle = 0;
 	}
 
 	public int getCoordXEnMetres() {
@@ -66,7 +69,6 @@ public class Voiture extends Observable {
 	}
 
 	public void tournerDroite() {
-		// TODO Auto-generated method stub
-		
+		angle += coeffRotation;
 	}
 }

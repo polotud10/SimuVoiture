@@ -58,7 +58,7 @@ public class SimulateurVoiture {
 				}
 				
 				if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-					System.out.println("fleche de droite");
+					voiture.tournerDroite();
 				}
 				
 				if (e.getKeyCode() == KeyEvent.VK_LEFT) {

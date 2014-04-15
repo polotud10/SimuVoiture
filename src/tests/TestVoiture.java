@@ -72,7 +72,7 @@ public class TestVoiture {
 	public void testTournerDroiteVoiture() {
 		Voiture voiture = new Voiture(0,0,100);
 		voiture.tournerDroite();
-		
+
 		assertTrue(5 == voiture.getAngle());
 	}
 }
