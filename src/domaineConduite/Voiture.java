@@ -53,4 +53,9 @@ public class Voiture extends Observable {
 	public double getAngle() {
 		return angle;
 	}
+
+	public void accelerer() {
+		// TODO Auto-generated method stub
+		
+	}
 }

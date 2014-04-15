@@ -51,4 +51,12 @@ public class TestVoiture {
 		voiture.setAngle(20);
 		assertTrue(20 == voiture.getAngle());
 	}
+	
+	@Test
+	public void testAccelerationVoiture() {
+		Voiture voiture = new Voiture(0,0,100);
+		voiture.accelerer();
+		
+		assertEquals(105 ,voiture.getVitesseMetreParSecondes());
+	}
 }
