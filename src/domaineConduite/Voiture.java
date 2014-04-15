@@ -39,8 +39,14 @@ public class Voiture extends Observable {
 	}
 
 	public void avancerEnFonctionDeLaVitesse() {
-		coordXEnMetres += vitesseMetreParSecondes;
-		coordYEnMetres += vitesseMetreParSecondes;
+		double radians = Math.toRadians(angle);
+                  
+		double vitesseEnX = Math.cos(radians) * vitesseMetreParSecondes;
+		double vitesseEnY = Math.sin(radians) * vitesseMetreParSecondes;
+		
+		coordXEnMetres += vitesseEnX;
+		coordYEnMetres += vitesseEnY;
+		
 		notificationObservateurs();
 	}
 

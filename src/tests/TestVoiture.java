@@ -40,9 +40,10 @@ public class TestVoiture {
 	@Test
 	public void testMiseAjourPositionEnFonctionVitesse() {
 		Voiture voiture = new Voiture(20,10,100);
+		voiture.setAngle(0);
 		voiture.avancerEnFonctionDeLaVitesse();
 		assertEquals(120, voiture.getCoordXEnMetres());
-		assertEquals(110, voiture.getCoordYEnMetres());
+		assertEquals(10, voiture.getCoordYEnMetres());
 	}
 
 	@Test
