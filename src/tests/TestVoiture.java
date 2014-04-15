@@ -57,6 +57,14 @@ public class TestVoiture {
 		Voiture voiture = new Voiture(0,0,100);
 		voiture.accelerer();
 		
-		assertEquals(105 ,voiture.getVitesseMetreParSecondes());
+		assertEquals(101 ,voiture.getVitesseMetreParSecondes());
+	}
+	
+	@Test
+	public void testDecelerationVoiture() {
+		Voiture voiture = new Voiture(0,0,100);
+		voiture.decelerer();
+		
+		assertEquals(99 ,voiture.getVitesseMetreParSecondes());
 	}
 }
