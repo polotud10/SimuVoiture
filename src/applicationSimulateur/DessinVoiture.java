@@ -46,7 +46,7 @@ public class DessinVoiture extends JFrame {
 		pointDuTriangleEnY[2]=yPixelVoiture;
 
 		Polygon affichageDeLaVoiture = new Polygon(pointDuTriangleEnX, pointDuTriangleEnY, nombreDePoints);  
-		
+	
 		graphics.fillPolygon(affichageDeLaVoiture);
 		
 	}
