@@ -62,7 +62,7 @@ public class SimulateurVoiture {
 				}
 				
 				if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-					System.out.println("fleche de gauche");
+					voiture.tournerGauche();
 				}
 			}
 		});
