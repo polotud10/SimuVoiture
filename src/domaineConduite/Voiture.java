@@ -93,4 +93,9 @@ public class Voiture extends Observable {
 	public int getTaille() {
 		return tailleTriangle;
 	}
+
+	public int getPositionXDuNez() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

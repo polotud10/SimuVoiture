@@ -92,4 +92,13 @@ public class TestVoiture {
 		
 		assertTrue(70 == voiture.getTaille());
 	}
+	
+	@Test
+	public void testGetNezXDeLaVoiture() {
+		Voiture voiture = new Voiture(0,0,100);
+		voiture.setAngle(90);
+		
+		assertTrue(70 == voiture.getPositionXDuNez());
+	}
+	
 }
