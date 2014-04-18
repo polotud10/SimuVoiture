@@ -101,7 +101,6 @@ public class TestVoiture {
 		assertTrue(75 == voiture.getPositionXDuNez());
 	}
 	
-	
 	@Test
 	public void testGetNezYDeLaVoiture() {
 		Voiture voiture = new Voiture(50,50,100);
@@ -110,4 +109,11 @@ public class TestVoiture {
 		assertTrue(75 == voiture.getPositionYDuNez());
 	}
 	
+	@Test
+	public void testVoitureResteDansFenetre() {
+		Voiture voiture = new Voiture(99,50,100);
+		voiture.avancerEnFonctionDeLaVitesse();
+		
+		assertTrue(voiture.approcheBordFenetre());
+	}
 }

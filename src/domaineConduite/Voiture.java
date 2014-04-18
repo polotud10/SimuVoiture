@@ -113,4 +113,9 @@ public class Voiture extends Observable {
 		
 		return nezPostionGlobalY;
 	}
+
+	public boolean approcheBordFenetre() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
