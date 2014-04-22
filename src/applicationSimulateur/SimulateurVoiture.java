@@ -71,7 +71,8 @@ public class SimulateurVoiture {
 			}
 		});
 		
-		while(true){
+		while(true) {
+			
 		}
 	}
 }
