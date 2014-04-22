@@ -115,7 +115,14 @@ public class Voiture extends Observable {
 	}
 
 	public boolean approcheBordFenetre() {
-		// TODO Auto-generated method stub
-		return false;
+		if ((getPositionXDuNez() + vitesseMetreParSecondes < 980) && (getPositionXDuNez() - vitesseMetreParSecondes > 0)
+		 && (getPositionYDuNez() + vitesseMetreParSecondes < 980) && (getPositionYDuNez() - vitesseMetreParSecondes > 70))
+			return false;
+		else 
+			return true;
+	}
+
+	public void arreterVoiture() {
+		vitesseMetreParSecondes = 0;
 	}
 }

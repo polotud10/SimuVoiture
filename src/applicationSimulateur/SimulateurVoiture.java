@@ -17,7 +17,7 @@ public class SimulateurVoiture {
 	public static void main(String[] args) {
 		
 		DessinVoiture dessinVoiture = new DessinVoiture();
-		final Voiture voiture = new Voiture(100,10,10);
+		final Voiture voiture = new Voiture(100,100,10);
 		voiture.setAngle(80);
 		voiture.setTaille(30);
 		final VueVoiture triangle = new VueVoiture(voiture, dessinVoiture);
@@ -27,7 +27,9 @@ public class SimulateurVoiture {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				voiture.avancerEnFonctionDeLaVitesse();
-				
+				if (voiture.approcheBordFenetre())
+					voiture.arreterVoiture();
+					//System.out.println("bord");
 			}
 		});
 		

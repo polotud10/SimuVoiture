@@ -111,9 +111,12 @@ public class TestVoiture {
 	
 	@Test
 	public void testVoitureResteDansFenetre() {
-		Voiture voiture = new Voiture(99,50,100);
-		voiture.avancerEnFonctionDeLaVitesse();
+		Voiture voiture = new Voiture(274,200,100);
 		
+		voiture.avancerEnFonctionDeLaVitesse();
+		assertFalse(voiture.approcheBordFenetre());
+		
+		voiture.avancerEnFonctionDeLaVitesse();
 		assertTrue(voiture.approcheBordFenetre());
 	}
 }
